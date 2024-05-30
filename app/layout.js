@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "NAS Js",
   description: "this is a webapplication to use NAS Js",
+  keywords : "NAS Js , NAS Js Home Page , NAS Js Get Started",
+  Author : "Raunak Singh"
 };
 
 export default function RootLayout({ children }) {
