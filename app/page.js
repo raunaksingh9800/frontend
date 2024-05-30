@@ -1,3 +1,4 @@
+
 import { Group } from "@mantine/core"
 import GlobeDemo from "./AccUI/globeExport"
 import Image from "next/image"
@@ -31,12 +32,11 @@ export default function page() {
             </Group>
         </nav>
         <div className="mt-14 w-screen flex flex-col h-[90vh] justify-center items-center " >
-
             <div className=" text-xl md:text-4xl text-center font-semibold">
-                The Database Framework for the World
+                The Database Framework for the World
             </div>
             <div className=" w-[90vw] lg:w-[50vw] text-xs md:text-sm pt-6 text-center">
-            Used by some of the world's largest companies, Next.js enables you to create high-quality web applications with the power of React components.
+            Used by some of the world&apos;s largest companies, Next.js enables you to create high-quality web applications with the power of React components.
             </div>
             <div className="flex flex-row text-sm gap-4 mt-8 z-50">
                 <div className=" px-8 rounded-lg py-2 border-black border-solid border-2 bg-black text-white">Get Started</div>
