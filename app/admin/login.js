@@ -44,7 +44,7 @@ const Desktop = () => {
           </div>
         </div>
         <div className=' w-full h-[20px] mt-[2px] flex flex-col items-end' >
-        <Link href='/doc/Password' className='text-[10px] opacity-50 pr-[6%]'>Forgot Password?</Link>
+        <Link href='/docs/password#forgot-password-' className='text-[10px] opacity-50 pr-[6%]'>Forgot Password?</Link>
 
         </div>
         <div className=' w-full h-[40px] mt-[16px] flex flex-col items-center' >
@@ -101,7 +101,7 @@ const Mobile = () => {
           </div>
         </div>
         <div className=' w-full h-[20px] mt-[44px] flex flex-col items-end' >
-          <Link href='/doc/Password' className='text-[10px] opacity-50 pr-[6%]'>Forgot Password?</Link>
+          <Link href='/docs/password#forgot-password-' className='text-[10px] opacity-50 pr-[6%]'>Forgot Password?</Link>
         </div>
         <div className=' w-full h-[40px] mt-[24px] flex flex-col items-center' >
           <div className='w-[87%]  flex flex-col justify-center' >
