@@ -22,7 +22,7 @@ export default function page() {
             <Group justify="space-between"  className="flex flex-row  items-center ">
                 <div className="flex flex-row ml-2 md:ml-5 justify-center items-center">
                     <Image alt="Logo" src={NASJSpic} width={30} />
-                     <div className="text-lg font-bold pl-1"><FlipWords words={words} /> </div>
+                     <div className="text-lg font-bold pl-1"><FlipWords duration={2000} words={words} /> </div>
                 </div>
                 <div className="h-14 text-xs md:text-sm w-[100px] md:w-[400px] gap-6 md:gap-8 flex flex-row justify-end mr-4 md:mr-8 opacity-70 items-center ">
                     <Link href="/admin" >Login</Link>
@@ -31,18 +31,20 @@ export default function page() {
                 </div>
             </Group>
         </nav>
+        <article>
         <div className="mt-14 w-screen flex flex-col h-[90vh] justify-center items-center " >
             <div className=" text-xl md:text-4xl text-center font-semibold">
                 The Database Framework for the World
             </div>
-            <div className=" w-[90vw] lg:w-[50vw] text-xs md:text-sm pt-6 text-center">
-            Used by some of the world&apos;s largest companies, Next.js enables you to create high-quality web applications with the power of React components.
+            <div className=" w-[90vw] lg:w-[50vw] text-xs md:text-sm pt-3 md:pt-6 text-center">
+                NAS Js enables you to enjoy high end data Network-attached storage System.
             </div>
-            <div className="flex flex-row text-sm gap-4 mt-8 z-50">
-                <div className=" px-8 rounded-lg py-2 border-black border-solid border-2 bg-black text-white">Get Started</div>
-                <Link href={'/docs/Getting-Started/Installation'} className=" px-8 rounded-lg py-2 border-black border-solid border-2 ">Read Docs</Link>
+            <div className="flex flex-row text-xs md:text-sm gap-4 mt-4 md:mt-8 z-50">
+                <div className=" px-6 py-2  md:px-8 rounded-lg  border-black border-solid border-2 bg-black text-white">Get Started</div>
+                <Link href={'/docs/Getting-Started/Installation'} className=" px-6 md:px-8 rounded-lg py-2 border-black border-solid border-2 ">Read Docs</Link>
             </div>
-        </div>
+            </div>
+        </article>
         </div>
 
         <div className="fixed bottom-[-250px] right-[-250px]" >

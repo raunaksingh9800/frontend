@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NAS Js",
-  description: "this is a webapplication to use NAS Js",
+  description: "NAS Js enables you to enjoy high end data Network-attached storage System."
   
 };
 
