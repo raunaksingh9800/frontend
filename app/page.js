@@ -32,14 +32,14 @@ export default function page() {
             </Group>
         </nav>
         <article>
-        <div className="mt-14 w-screen flex flex-col h-[90vh] justify-center items-center " >
+        <div className="mt-14 z-50 w-screen flex flex-col h-[90vh] justify-center items-center " >
             <div className=" text-xl md:text-4xl text-center font-semibold">
                 The Database Framework for the World
             </div>
             <div className=" w-[90vw] lg:w-[50vw] text-xs md:text-sm pt-3 md:pt-6 text-center">
                 NAS Js enables you to enjoy high end data Network-attached storage System.
             </div>
-            <div className="flex flex-row text-xs md:text-sm gap-4 mt-4 md:mt-8 z-50">
+            <div className="flex flex-row text-xs md:text-sm gap-4 mt-4 md:mt-8 z-10">
                 <div className=" px-6 py-2  md:px-8 rounded-lg  border-black border-solid border-2 bg-black text-white">Get Started</div>
                 <Link href={'/docs/Getting-Started/Installation'} className=" px-6 md:px-8 rounded-lg py-2 border-black border-solid border-2 ">Read Docs</Link>
             </div>
