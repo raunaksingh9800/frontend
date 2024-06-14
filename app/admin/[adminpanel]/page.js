@@ -1,18 +1,32 @@
 "use client";
+import dynamic from 'next/dynamic';
 import { useSearchParams , useRouter } from 'next/navigation';
 
-export default function Page({ params }) {
+import { useState } from 'react';
 
+const Main = dynamic(() => import('../../AuthUI/login'), { ssr: false });
+
+export default function Login() {
   const searchParams = useSearchParams();
-  const color = searchParams.get('color');
-  const size = searchParams.get('size');
-  console.log(color)
-  // const router = useRouter();
-  // const { id, color, size } = router.query
-  return (
-   <>
-   <h1> 
-    ks
-    </h1></>
-  )
+  const IP = searchParams.get('ip');
+  const AUTHKEY = searchParams.get('authkey');
+  const [formData, setFormData] = useState({
+      valueOne: AUTHKEY,
+      valueTwo: IP
+    });
+    const handleDataChange = (key, value) => {
+      setFormData((prevData) => ({
+        ...prevData,
+        [key]: value
+      }));
+    };
+return (
+  <Main 
+  onData={handleDataChange}
+  onButtonClick={() => {
+      alert(formData.valueOne)
+  }} 
+  heading={"Welcome 😄"} subHeading={'Please Enter Your Auth Key And IP given by the Backend CLI '} textOne={'Authentication Key'} valueOne={formData.valueOne} textTwo={'IP Address'} valueTwo={formData.valueTwo} forgot={'Need Help?'} forgotLink={'/docs/password#forgot-password-'} buttonText={'Access'}
+  />
+)
 }
