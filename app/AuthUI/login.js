@@ -44,7 +44,7 @@ const Desktop = ({ heading, subHeading, textOne, valueOne, textTwo, valueTwo, fo
         </div>
       </div>
       <Image
-        alt="Mountains"
+        alt="NAS Js Logo"
         src={Bgpic}
         quality={100}
         fill
@@ -94,7 +94,7 @@ const Mobile = ({ heading, subHeading, textOne, valueOne, textTwo, valueTwo, for
         </div>
       </div>
       <Image
-        alt="Mountains"
+        alt="NAS Js Logo"
         src={Bgpic}
         quality={100}
         fill

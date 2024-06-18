@@ -14,6 +14,7 @@ export const metadata = {
     Author : "Raunak Singh"
   };
 export default function page() {
+    const Returnbaseenv = ({text}) => {return <>{text}</>}
     const words = ["NAS" ,"Fast", "Better"]
     return (
         <>
@@ -25,7 +26,7 @@ export default function page() {
                      <div className="text-lg font-bold pl-1"><FlipWords duration={2000} words={words} /> </div>
                 </div>
                 <div className="h-14 text-xs md:text-sm w-[100px] md:w-[400px] gap-6 md:gap-8 flex flex-row justify-end mr-4 md:mr-8 opacity-70 items-center ">
-                    <Link href="/login" >Login</Link>
+                    <Link href="/login" >{(process.env.TYPE === "demo")? <Returnbaseenv text="Demo" /> : <Returnbaseenv text="Login" />  }</Link>
                     <Link href="https://github.com/raunaksingh9800/NAS-System">Github</Link>
                     <Link href="https://www.instagram.com/raunak.apk/" >Contact</Link>
                 </div>
