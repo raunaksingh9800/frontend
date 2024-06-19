@@ -1,10 +1,10 @@
 
 import { Group } from "@mantine/core"
-import GlobeDemo from "./AccUI/globeExport"
+import GlobeDemo from "./components/AccUI/globeExport"
 import Image from "next/image"
 import NASJSpic from '/public/NAS-JS-Logo.png'
 import Link from "next/link"
-import { FlipWords } from "./AccUI/flip-words"
+import { FlipWords } from "./components/AccUI/flip-words"
 
 
 
