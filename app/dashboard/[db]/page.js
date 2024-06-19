@@ -107,7 +107,7 @@ export default function FullLayout() {
                 </AppShell.Header>
 
 
-                <AppShell.Navbar style={{ background: "transparent" }} >
+                <AppShell.Navbar style={{ background:  `${(opened)? "white" : "transparent" }` }} >
                     <NavLink
                         href="#required-for-focus"
                         label="User"
