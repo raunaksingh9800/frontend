@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { useState } from 'react';
 import axios from 'axios';
 import crypto from 'crypto'
-const Main = dynamic(() => import('../AuthUI/login'), { ssr: false });
+const Main = dynamic(() => import('../components/AuthUI/login'), { ssr: false });
 // useRouter
 import { useRouter } from 'next/navigation'
  
@@ -45,7 +45,7 @@ export default function Login() {
           }
        }
        else {
-        router.push('/dashboard')
+        router.push(`/dashboard/main?username=${formData.valueOne}`)
        }
       };
   const subHeading = () => {

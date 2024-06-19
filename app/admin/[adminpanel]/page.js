@@ -1,10 +1,10 @@
 "use client";
 import dynamic from 'next/dynamic';
-import { useSearchParams , useRouter } from 'next/navigation';
+import { useSearchParams  } from 'next/navigation';
 
 import { useState } from 'react';
 
-const Main = dynamic(() => import('../../AuthUI/login'), { ssr: false });
+const Main = dynamic(() => import('../../components/AuthUI/login'), { ssr: false });
 
 export default function Login() {
   const searchParams = useSearchParams();
